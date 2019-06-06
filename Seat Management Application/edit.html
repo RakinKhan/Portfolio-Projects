@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta name="description" content="Seat checking application">
+            <meta name="keywords" content="HTML,CSS,JavaScript">
+            <meta name="author" content="Rakin Khan">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            <link rel="stylesheet" href="/resources/css/style.css">
+            <title>Edit Reservation Page</title>
+    </head>
+    <body>
+        <div class='row'>
+            <div class='app-edit'>
+                <h1>Please edit the reservation below</h1>
+                <form id="change-form">
+                    <input type="text" id="change-name" name="newName"><br>
+                    <input type="number" max="10" id="change-size" name="newSize"><br>
+                    Time: <input type="time"id="change-time" name="newTime"><br>
+                    VIP: <input type="radio" name="newStatus" value="YES" id="change-status">Yes <input type="radio" name="newStatus" value="NO">No<br>
+                    <input type="text" id="change-note" name="newNote"><br>
+                    <input type="text" id="change-server" name="newServer"><br>
+                    <button>Submit</button>
+                </form>
+                <br>
+                --------------------------
+                <br>
+                <button id="remove-reservation">Remove Reservation</button>
+            </div>
+        </div>
+
+        <script src="bookingsapp.js"></script>
+        <script src="bookingsedit.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Seat checking application">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Rakin Khan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/resources/css/style.css">
+        <title>Seat Checking Application</title>
+
+    </head>
+
+    <body >
+        <div class="row">
+            <h1 class="header">Current Reservations</h1>
+        <div class="filter-row">  
+            <input id="seating-search" type="text" placeholder="Search current seating arrangement" size="28"></input>
+            <select id="ByFilter">
+                <option value="byName">Reservation Name</option>
+                <option value="bySize">Party Size</option>
+                <option value="byTime">Reservation Time</option>
+                <option value="byStatus">VIP</option>
+                <option value="byDiet">Dietary Restrictions</option>
+                <option value="byServer">Server for guest Party</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <table>
+            <div id="filtered"></div>
+        </table>
+
+        <div id="seats-left"></div>
+        
+        <div class="form-style">
+            <p>Add Reservation Below</p>
+            <form id="party-form">
+                <input type="text" placeholder="Reservation Name" name="theName"><br>
+                <input type="number" placeholder="Party Size" name="theSize" max="10"><br>
+                Time: <input type="time" name="theTime"><br>
+                VIP: <input type="radio" name="theStatus" value="YES" required>Yes <input type="radio" name="theStatus" value="NO">No<br>
+                <input type="text" placeholder="Dietary Notes" name="theNotes"><br>
+                <input type="text" placeholder="Server" name="theServer"><br>
+                <button>Submit</button>
+            </form>
+        </div>
+        </div>
+        <script src="uuidv4.js"></script>
+        
+        <script src="bookingsapp.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>

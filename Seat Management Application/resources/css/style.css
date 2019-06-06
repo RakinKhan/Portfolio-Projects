@@ -1,0 +1,174 @@
+/* Basic Setup */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../vendors/img/background-plat-3.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #1e1a29;
+}
+
+@font-face {
+    font-family: 'Nickainley';
+    src: url('../../vendors/fonts/Nickainley-Normal.otf')
+}
+/* H1 Styling */
+
+.header {
+    font-family: 'Nickainley';
+    font-size: 75px;
+    color: #fff0f2;
+    text-align: center;
+    padding-top: 10%;
+    text-decoration: none;
+    position: relative;
+}
+
+.header:before {
+    content: '';
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    bottom: 95px;
+
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-radius: 17%
+}
+
+.header:after {
+    content: '';
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    bottom: -10px;
+
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-radius: 17%
+}
+
+/* Filter bar Styling */
+.filter-row {
+    float: right;
+    margin-top: 30px;
+    margin-right: 5%
+}
+
+.filter-row input {
+    font-size: 16px;
+}
+.filter-row select {
+    font-size: 16px;
+    background: #ffe1e6;
+    color: #1e1a29
+}
+
+#filtered {
+    width: 70%;
+    margin: 50px auto 20px auto;
+}
+
+/* Table Styling */
+.row-style, th, td {
+    border-color: #ffc4cd;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+.rowstyle, th {
+    background-color: #ffe1e6;
+    color: #1e1a29;
+    font-size: 15px;
+    font-weight: bold
+}
+
+.row-style, td {
+    background-color: #fff7f8;
+    color: #1e1a29;
+    font-size: 14px;
+    font-weight: bold
+}
+/* Seats left Styling */
+#seats-left {
+    font-family: 'Nickainley';
+    color:#fff0f2;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative  
+}
+
+#seats-left:after {
+    content: '';
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    bottom: -10px;
+
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-radius: 17%
+}
+
+/* Form Styling */
+.form-style {
+    text-align: center;
+    margin-top: 50px  
+}
+.form-style p {
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: 'Nickainley';
+    color:#fff0f2;
+}
+#party-form {
+    background-color: #fff0f2;
+    width: 30%;
+    margin: 15px 35% 0 35%;
+    border-radius: 5px
+}
+
+/* Edit page*/
+
+.app-edit {
+    padding-top: 400px;
+    text-align: center;
+    color: #fff0f2
+}
+.app-edit h1 {
+    font-family: 'Nickainley';
+    font-size: 50px;
+}
+
+#change-form {
+    background-color: #fff0f2;
+    color: #1e1a29;
+    width: 30%;
+    margin: 15px 35% 0 35%;
+    border-radius: 5px
+}
