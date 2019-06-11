@@ -38,12 +38,12 @@
         <div class="form-style">
             <p>Add Reservation Below</p>
             <form id="party-form">
-                <input type="text" placeholder="Reservation Name" name="theName"><br>
-                <input type="number" placeholder="Party Size" name="theSize" max="10"><br>
-                Time: <input type="time" name="theTime"><br>
+                <input type="text" placeholder="Reservation Name" name="theName" required><br>
+                <input type="number" placeholder="Party Size" name="theSize" max="10" required><br>
+                Time: <input type="time" name="theTime" required><br>
                 VIP: <input type="radio" name="theStatus" value="YES" required>Yes <input type="radio" name="theStatus" value="NO">No<br>
-                <input type="text" placeholder="Dietary Notes" name="theNotes"><br>
-                <input type="text" placeholder="Server" name="theServer"><br>
+                <input type="text" placeholder="Dietary Notes" name="theNotes" required><br>
+                <input type="text" placeholder="Server" name="theServer" required><br>
                 <button>Submit</button>
             </form>
         </div>
