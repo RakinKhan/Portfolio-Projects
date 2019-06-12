@@ -86,7 +86,7 @@ let totalSeatsDOM = (bookings) => {
     let displayAvailability = document.createElement('p')
 
     if (totalSeats <= 0) {
-        displayAvailability.textContent = `Sorry, you are over-capacity!`
+        displayAvailability.textContent = `Sorry, you are over-capacity by ${(totalSeats - (totalSeats * 2))}!`
     } else {
         displayAvailability.textContent = `You have ${totalSeats} seats left`
     }
