@@ -8,7 +8,7 @@ let bookingMatch = bookings.find((booking) => {
 document.querySelector('#change-name').value = bookingMatch.partyName
 document.querySelector('#change-size').value = bookingMatch.partySize
 document.querySelector('#change-time').value = bookingMatch.partyTime
-document.querySelector('#change-status').value = bookingMatch.partyStatus
+document.querySelector('#change-form').newStatus.value = bookingMatch.partyStatus
 document.querySelector('#change-note').value = bookingMatch.partyNotes
 document.querySelector('#change-server').value = bookingMatch.partyServer
 
