@@ -78,7 +78,8 @@ let sortBookings = (bookings, sortBy) => {
                 return 0
             }
         })
-    }
+    } else {
+        return bookings
 }
 
 let fullList = (bookings) => {
