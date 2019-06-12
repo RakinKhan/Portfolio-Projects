@@ -36,13 +36,7 @@ let sortBookings = (bookings, sortBy) => {
         })
     } else if (sortBy === 'bySize') {
         return bookings.sort((a, b) => {
-            if (a.partySize > b.partySize) {
-                return -1
-            } else if (a.partySize < b.partySize) {
-                return 1
-            } else {
-                return 0
-            }
+            return b.partySize - a.partySize
         })
     } else if (sortBy === 'byTime') {
         return bookings.sort((a, b) => {
